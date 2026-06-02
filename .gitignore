@@ -1,0 +1,27 @@
+# Environment — never commit real keys
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+out/
+cache/
+
+# Foundry
+lib/
+broadcast/
+.env.bak
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
