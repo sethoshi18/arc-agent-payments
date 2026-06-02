@@ -33,8 +33,9 @@ export const config = {
   contracts: {
     agentIdentityRegistry: (process.env.AGENT_IDENTITY_REGISTRY_ADDRESS ?? "") as `0x${string}`,
     agentJobContract: (process.env.AGENT_JOB_CONTRACT_ADDRESS ?? "") as `0x${string}`,
-    // Arc Testnet USDC — verify on https://testnet.arcscan.app
-    usdc: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359" as `0x${string}`,
+    // Arc Testnet USDC — ERC-20 interface over the native asset (6 decimals)
+    // Source: https://docs.arc.network/arc/references/contract-addresses
+    usdc: "0x3600000000000000000000000000000000000000" as `0x${string}`,
   },
   wallet: {
     privateKey: (process.env.AGENT_PRIVATE_KEY ?? "") as `0x${string}`,

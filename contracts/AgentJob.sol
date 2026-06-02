@@ -14,9 +14,12 @@ interface IERC20 {
 /// @notice USDC is the native Arc token. Jobs are funded at creation and
 /// payment is atomically released to the agent owner on completion.
 contract AgentJob is IERC8183 {
-    // ─── Arc Testnet USDC address ────────────────────────────────────────────
-    // Replace with live address once deployed; placeholder for testnet
-    address public constant USDC = 0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359;
+    // ─── Arc Testnet USDC (ERC-20 interface over native asset) ───────────────
+    // USDC is Arc's native gas token. This ERC-20 interface supports transferFrom,
+    // approve, and allowance — affecting the same underlying native balance.
+    // 6 decimals on ERC-20 interface, 18 decimals natively (gas accounting).
+    // Source: https://docs.arc.network/arc/references/contract-addresses
+    address public constant USDC = 0x3600000000000000000000000000000000000000;
 
     IERC20 private immutable _usdc;
     AgentIdentity public immutable identityRegistry;

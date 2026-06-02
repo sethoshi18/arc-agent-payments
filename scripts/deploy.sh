@@ -31,7 +31,7 @@ echo ""
 echo "📋 Deploying AgentJob (ERC-8183)..."
 
 # Arc Testnet USDC address — verify on https://testnet.arcscan.app
-USDC_ADDRESS="0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+USDC_ADDRESS="0x3600000000000000000000000000000000000000"
 
 JOB_ADDRESS=$(forge create \
   contracts/AgentJob.sol:AgentJob \
