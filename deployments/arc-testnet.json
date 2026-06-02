@@ -1,0 +1,40 @@
+{
+  "network": "Arc Testnet",
+  "chainId": 5042002,
+  "rpc": "https://rpc.testnet.arc.network",
+  "explorer": "https://testnet.arcscan.app",
+  "deployedAt": "2026-06-02",
+  "deployer": "0xE7D97cB07A093030e3D825518EC4e5708b6198e9",
+  "contracts": {
+    "AgentIdentity": {
+      "address": "0x5Bef356f89425823FC7eebB3A6ED1A678F3b8233",
+      "standard": "ERC-8004",
+      "description": "On-chain AI agent identity and reputation registry",
+      "txHash": "0xf935ef635b9654114331a5c1abf572a957761f6cd51f7bf53ea9f12045c57935",
+      "block": 45141882,
+      "explorerUrl": "https://testnet.arcscan.app/address/0x5Bef356f89425823FC7eebB3A6ED1A678F3b8233"
+    },
+    "AgentJob": {
+      "address": "0xD698d15F776279c0213444a779941e8E0Cbe5094",
+      "standard": "ERC-8183",
+      "description": "Programmable job lifecycle with USDC escrow",
+      "txHash": "0x06f627203931e3a6ae50b0b2d47f06a29f62e0b119adcc81a6a7ba3b47fb66e3",
+      "block": 45141930,
+      "explorerUrl": "https://testnet.arcscan.app/address/0xD698d15F776279c0213444a779941e8E0Cbe5094"
+    }
+  },
+  "tokens": {
+    "USDC": {
+      "address": "0x3600000000000000000000000000000000000000",
+      "decimals": 6,
+      "note": "Native asset ERC-20 interface — same underlying balance as native USDC"
+    }
+  },
+  "demoRun": {
+    "agentTokenId": 1,
+    "jobId": 1,
+    "jobStatus": "Completed",
+    "agentReputation": "51%",
+    "gasSpentTotal": "~0.079 USDC"
+  }
+}

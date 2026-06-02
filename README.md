@@ -46,6 +46,20 @@ Arc is Circle's Layer-1 blockchain where **USDC is the native gas token**. This 
 
 ---
 
+## Live Deployments
+
+### Arc Testnet (Chain ID 5042002)
+
+| Contract | Address | Standard |
+|---|---|---|
+| AgentIdentity | [`0x5Bef356f...3b8233`](https://testnet.arcscan.app/address/0x5Bef356f89425823FC7eebB3A6ED1A678F3b8233) | ERC-8004 |
+| AgentJob | [`0xD698d15F...5094`](https://testnet.arcscan.app/address/0xD698d15F776279c0213444a779941e8E0Cbe5094) | ERC-8183 |
+| USDC (native ERC-20) | [`0x3600...0000`](https://testnet.arcscan.app/address/0x3600000000000000000000000000000000000000) | ERC-20 |
+
+Full deployment details: [`deployments/arc-testnet.json`](./deployments/arc-testnet.json)
+
+---
+
 ## Quick Start
 
 ### 1. Install dependencies
