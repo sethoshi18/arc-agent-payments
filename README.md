@@ -1,4 +1,4 @@
-# arc-agent-payments
+# Stigmetry Agent Payments
 
 **AI Agentic Commerce & Payments on Arc** — built with Circle's App Kits and MCP.
 
@@ -181,7 +181,7 @@ claude mcp add --transport stdio arc-agent npx tsx src/mcp/server.ts
 ## Project Structure
 
 ```
-arc-agent-payments/
+agent-payments/
 ├── contracts/
 │   ├── interfaces/
 │   │   ├── IERC8004.sol        # Agent identity interface
